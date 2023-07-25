@@ -26,5 +26,11 @@ collaborative coding with Linux basics
 
 //Browser global object == window  a bit lit
 //Nodejs global objetct == global
+Node.js was created by Ryan Dahl, a developer who wanted to build a scalable network application.
+Node.js is built on top of the V8 JavaScript engine, which was developed by Google for their Chrome web browser.
 
- global.console.log(" Tich")
+global.console.log(" Tich")
+
+ ___________________________________
+
+ nodejs uses chrome vA interpreter 

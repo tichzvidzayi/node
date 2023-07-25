@@ -1,1 +1,1 @@
-global.console.log(21112100)
+window.console.log(21112100)
