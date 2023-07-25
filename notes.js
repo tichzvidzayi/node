@@ -39,6 +39,28 @@ and Linux systems that use x64, IA-32, ARM, or MIPS processors. V8 can run stand
  WebAssembly defines a portable binary-code format and a corresponding text format for
 executable programs as well as software interfaces for facilitating interactions between such programs and their host environment
 -----------------------------------------------------------------
+We are shipping WebAssembly tail calls in V8 v11.2! In this post we give a brief overview of this proposal, demonstrate an interesting use case for C++ 
+coroutines with Emscripten, and show how V8 handles tail calls internally.
+-----------------------------------------
+Core Features of Nodejs
+- its event driven
+- non-blocking 1/O model
+
+Traditional server-side like PHP , Ruby on Rails use synchronous and blocking 1/) models 
+where each request is processed one at a time. Potentially leading to performance hit/bottlenecks.
+in high concurrent situations. 
+
+In contrast, node uses an asynchronous, non blocking i/o model
+meaning that it can handle multiple connections 
+simultaneously and efficiently manage concurrent tasks.
+
+ReactPHP is a low-level library for event-driven programming in PHP. 
+At its core is an event loop, on top of which it provides low-level 
+utilities, such as: Streams abstraction, async DNS resolver, network 
+client/server, HTTP client/server and interaction with processes. 
+Third-party libraries can use these components to create async network clients/servers and more.
+
+LARAVEl and other frameworks are asynchronous.
 */
 global.console.log(" Tich")
 
