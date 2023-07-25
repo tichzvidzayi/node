@@ -34,6 +34,10 @@ It is used in Chrome and in Node.js, among others.
 It implements ECMAScript and WebAssembly, and runs on Windows 7 or later, macOS 10.12+, 
 and Linux systems that use x64, IA-32, ARM, or MIPS processors. V8 can run standalone,
  or can be embedded into any C++ application.
+
+
+ WebAssembly defines a portable binary-code format and a corresponding text format for
+executable programs as well as software interfaces for facilitating interactions between such programs and their host environment
 -----------------------------------------------------------------
 */
 global.console.log(" Tich")
