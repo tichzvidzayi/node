@@ -87,3 +87,8 @@ console.log(`The file name is ${path.extname(__filename)}sc
   process object
 
   import process from 'process';
+
+  process.stdout.write("abc");
+  process.stdin.on("data", function (data) {
+    process.stdout.write(data.toString().trim());
+  })
