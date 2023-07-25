@@ -67,3 +67,23 @@ global.console.log(" Tich")
  ___________________________________
 
  nodejs uses chrome vA interpreter 
+
+ global.console.log(21112100);
+
+const path = require('path');
+//console.log(__dirname);
+//console.log(__filename);
+console.log(`The file name is ${path.extname(__filename)}sc
+ `);
+
+
+ for ( const key in global)
+ {
+        console.log(key);
+  }
+
+  _____________________________________
+
+  process object
+
+  import process from 'process';
