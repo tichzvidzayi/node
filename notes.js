@@ -22,13 +22,20 @@ npm created in 2011  (node Package Manager)
 Nodejs foundation {IBM , Microsoft, paypal, }
 collaborative coding with Linux basics
 
-*/
-
-//Browser global object == window  a bit lit
-//Nodejs global objetct == global
+------------------------------------------------------------------
+Browser global object == window  a bit lit
+Nodejs global objetct == global
+-------------------------------------------------------------------------
 Node.js was created by Ryan Dahl, a developer who wanted to build a scalable network application.
 Node.js is built on top of the V8 JavaScript engine, which was developed by Google for their Chrome web browser.
-
+--------------------------------------------------------------------
+V8 is Google’s open source high-performance JavaScript and WebAssembly engine, written in C++. 
+It is used in Chrome and in Node.js, among others. 
+It implements ECMAScript and WebAssembly, and runs on Windows 7 or later, macOS 10.12+, 
+and Linux systems that use x64, IA-32, ARM, or MIPS processors. V8 can run standalone,
+ or can be embedded into any C++ application.
+-----------------------------------------------------------------
+*/
 global.console.log(" Tich")
 
  ___________________________________
