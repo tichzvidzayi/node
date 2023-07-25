@@ -1,0 +1,1 @@
+global.console.log(21112100)

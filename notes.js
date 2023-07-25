@@ -24,3 +24,7 @@ collaborative coding with Linux basics
 
 */
 
+//Browser global object == window  a bit lit
+//Nodejs global objetct == global
+
+ global.console.log(" Tich")
