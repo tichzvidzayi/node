@@ -16,4 +16,11 @@ JavaScript on the server. Upon wrapping up this course,
 you’ll be equipped with fundamental Node.js concepts and techniques
 that you can put to use in your next project.
 
+Node created in 2009
+npm created in 2011  (node Package Manager)
+
+Nodejs foundation {IBM , Microsoft, paypal, }
+collaborative coding with Linux basics
+
 */
+
