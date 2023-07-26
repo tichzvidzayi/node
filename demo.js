@@ -1,3 +1,5 @@
+//import process from 'process';
+
 global.console.log(21112100);
 
 const path = require('path');
@@ -14,9 +16,11 @@ console.log(`The file name is ${path.extname(__filename)}sc
 
 
 
-  import process from 'process';
+/*
 
   process.stdout.write("abc");
   process.stdin.on("data", function (data) {
     process.stdout.write(data.toString().trim());
   })
+
+  */
