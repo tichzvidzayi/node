@@ -16,20 +16,25 @@ Parameters: This property takes Input from the user.
 
 
 
+The null value represents the intentional absence of any object value. It is one of JavaScript's primitive values and 
+is treated as falsy for boolean operations
+
 
     */
 const x  = 12;
 const y = 800;
+var str = null;
 const inp = process.stdin.on('connection', (str) => {
 
-    console.log(`${str} connected`)
+    console.log(`${str ? 'No connection yet': str } connected`)
 })
 
 process.on("exit", function (){
 
     process.stdout.write("\n\n\n");
     process.stdout.write(
-        `Go ${x} = horizontal ${y} vertical and inpur is ${inp}`
+        `Go ${x} = horizontal ${y} vertical and input
+         is ${!str ? 'No connection yet': str}`
     )
 })
 
@@ -75,3 +80,27 @@ child.on('message', message => {
 	// Message from the child process
 	console.log('Message from child:', message);
 });
+
+///----------------------------------------------
+
+console.log('In Child.js')
+
+// If the send method is available
+if(process.send) {
+
+	// Send Hello
+	process.send("Hello, this is child process.");
+
+	// Send multiple messages
+	setTimeout((function() {
+		return process.send("This was send after 1 second.");
+	}), 1000);
+
+	setTimeout((function() {
+		return process.send("This was send after 2 seconds.");
+	}), 2000);
+
+	setTimeout((function() {
+		return process.send("This was send after 3 seconds.");
+	}), 3000);
+}
