@@ -14,7 +14,23 @@ It returns a unique interval ID which can later be used by the clearInterval() m
 
 const intervalId = setInterval(func, 
     [delay, arg1, agr2, ..., argN]);
-
+func is the function that we want to execute repeatedly after delay milliseconds.
+delay (optional parameter) is the number of milliseconds delay between 
+two repeated execution of the function.
+arg1, …, argN (optional parameter) are the arguments that will be passed to func when it is executed
 */
+
+
+let count = 0;
+
+const intervalId = setInterval(() => {
+console.log('HELLO GEEK');
+count++;
+
+if (count === 5) {
+	console.log('Clearing the interval id after 5 executions');
+	clearInterval(intervalId);
+}
+}, 1000);
 
 ///---------------setInterval
